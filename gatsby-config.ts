@@ -5,7 +5,7 @@ const config: GatsbyConfig = {
     siteMetadata: {
         title: `Chris Haskins`,
         description: `Chris Haskins - Web Application Developer`,
-        siteUrl: `https://www.yourdomain.tld`,
+        siteUrl: `http://www.chrishaskins.codes`,
         author: `Chris Haskins`,
         image: ``
     },
