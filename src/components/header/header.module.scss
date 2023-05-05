@@ -1,21 +1,51 @@
 @import "../../styles/globals";
 
 .container {
-    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .masthead {
     text-align: center;
+    border-bottom: solid 1px rgba($blue, .2);
+    padding: 1.5rem;
+}
+
+.siteTitle {
     font-size: 3rem;
     font-weight: 700;
-    margin: 0;
-    border-bottom: solid 1px rgba($blue, .2);
     font-family: 'Playfair Display', serif;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+
+    p {
+        margin: 0;
+    }
 }
 
 .siteLinks {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 3rem;
     margin-top: 1rem;
+
+    a {
+        padding: 5px 0;
+    }
+}
+
+.resumeLink {
+    display: flex;
+    gap: .5rem;
+
+    svg {
+        width: 1.5rem;
+    }
 }

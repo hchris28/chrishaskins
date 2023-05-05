@@ -1,8 +1,5 @@
 import * as React from "react"
-
-interface IconProps {
-    className?: string;
-}
+import { IconProps } from "./icon-props"
 
 const ArrowDown = ({ className }: IconProps) : JSX.Element => {
     return (

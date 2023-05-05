@@ -48,6 +48,10 @@ const AboutMe = (props: PageProps): JSX.Element => {
                         <li><b>Frameworks</b> .NET, MVC, Entity Framework, Autofac (IoC), React</li>
                         <li><b>Skills/IDE</b> Visual Studio/VSCode, Subversion/TortoiseSVN, GitHub, MSSQL, MySQL, Firebase/Firestore</li>
                     </ul>
+                    <hr />
+                    <p>
+                        References and access to private GitHub repositories available on request.
+                    </p>
                 </div>
             </div>
         </main>

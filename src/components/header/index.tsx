@@ -1,7 +1,7 @@
 import * as React from "react"
-
 import NavLink from "./nav-link";
-
+import PdfIcon from "../icons/pdf";
+import resumePdf from "../../downloads/chris-haskins-resume.pdf";
 import * as styles from "./header.module.scss"
 
 interface HeaderProps {
@@ -15,8 +15,8 @@ interface NavLinkData {
     groupWith?: Array<string>;
 }
 
-const navLinkIsActive = (currentPath: string, navLinkData: NavLinkData) : boolean => {
-    return navLinkData.to === currentPath || 
+const navLinkIsActive = (currentPath: string, navLinkData: NavLinkData): boolean => {
+    return navLinkData.to === currentPath ||
         (navLinkData?.groupWith || []).includes(currentPath);
 }
 
@@ -27,12 +27,17 @@ const Header = ({ siteTitle, path }: HeaderProps): JSX.Element => {
         { to: "/about-me", label: "About Me" },
         { to: "/work-history", label: "Work History", groupWith: ["/channel-ready", "/anthonys"] },
         { to: "/personal-pursuits", label: "Personal Pursuits" },
-        { to: "/contact", label: "Contact" },
     ]
 
     return (
         <header className={styles.container}>
-            <p className={styles.masthead}>{siteTitle}</p>
+            <div className={styles.masthead}>
+                <p className={styles.siteTitle}>{siteTitle}</p>
+                <div className={styles.contact}>
+                    <p><a href="mailto:chris@xeelee.org">chris@xeelee.org</a></p>
+                    <p><a href="tel:206-552-4256">206-552-4256</a></p>
+                </div>
+            </div>
             <nav className={styles.siteLinks}>
                 {navLinks.map(navLink =>
                     <NavLink
@@ -43,6 +48,9 @@ const Header = ({ siteTitle, path }: HeaderProps): JSX.Element => {
                         {navLink.label}
                     </NavLink>)
                 }
+                <a href={resumePdf} className={styles.resumeLink} download>
+                    <PdfIcon /> Download Resume
+                </a>
             </nav>
         </header>
     )
