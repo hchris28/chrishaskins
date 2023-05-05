@@ -1,0 +1,37 @@
+[
+    {
+        "title": "My First Job - FansTel, Inc.",
+        "body": [
+            "After graduating from school with a B.A.S. in Electrical Engineering, I got my first industry job at a small family run telecommunications company, FansTel, Inc. I was hired as a repair technician to troubleshoot and repair hardware. During my time there, we were contracted to supply free caller id devices, which was one of the devices we manufactured, to customers that signed up for service with a large east coast phone company. We started receiving data from the phone company, and we had to do something with it. In what I now see to be a stroke of good fortune, the owners said yes when I said I could set up a database to import and manage the data coming in, even though I had not done this before. Using an early version MS Access I was able to create a process to import the data , clean it up, and set up label printing for the outgoing product.",
+            "In addition to fulfillment, part of the contract was to provide customer service for the devices we shipped. I took it upon myself to create an application to help manage customer service. We already had built a database of customers from the data we received which provided a base to work from. Using MS Access's built-in form capabilities and some Visual Basic code, I was able to put together a system that improved the efficiency of our customer service agents and streamlined the repair / replacement process. At this point I hung up my soldering gun for good and had started down the a different path.",
+            "Looking back, I believe that this job was critical in shaping my self-reliant attitude towards application development. I am grateful to have had this experience."
+        ]
+    },
+    {
+        "title": "Move to Seattle - R+R Resources",
+        "body": [
+            "After my time at FansTel, I had made the decision to move from Phoenix to Seattle. If I'm being honest, this was not a decision that was given a great deal of consideration. I was young and did not know any better, so I packed up and moved to Seattle without a job lined up. Fortunately I found a position within a few weeks, again with a small company. This time though I applied as a database / application developer. R+R worked with high schools to run fund-raising campaigns offering magazine subscriptions. My role here was more focused on data: managing databases, importing and scrubbing data, and writing reports. I had the oppurtunity to work with a contracted software developer that wrote and maintained in-house software for the organization. It was here that I leveled up from MS Access and Visual Basic to MS Sql Server and C# / Visual Studio."
+        ]
+    },
+    {
+        "title": "Branching Out - Digital Odyssey",
+        "body": [
+           "After working at R+R for a couple of years, I left in search of a position that would allow me to lean in to application development a bit more. I ended up  starting a web design / build shop with 3 of my friends, Digital Odyssey. At digital Odyssey I was the primary developer. We attracted several clients and found some success. I did most of my work during this period in PHP, MySql, and HTML / CSS. The decision to deviate from Microsoft products for development was mostly practical, the alternatives were cheaper amd more readily available to us as a small business. I was also excited about the oppurtunity to learn something new. Most of our projects were small e-commerce shops or marketing web sites. After a couple of years of doing this, the stress of constant hustling for work started to wear on me and I wanted to find something more stable." 
+        ]
+    },
+    {
+        "title": "Anthony's Restaurants",
+        "body": [
+            "Through connections made at Digital Odyssey I next found myself at Anthony's Restaurants. The owner was unhappy with the available software solutions and was looking for someone to develop some custom applications [(read more here)](/anthonys). The restaurant industry is dynamic, and this created an interesting and challenging environment to work in. With multiple remote locations, web-based applications were a natural fit. I enjoyed working directly with the users of the applications I was creating, it's a great feeling seeing your applications used and solving problems.",
+            "The IT department at Anthony's consisted of 2 people, a developer and a network administrator. At one point, when I had multiple projects going and the current network admin decided he'd like to get more into development, I was given the opportunity to act as mentor and work with him to get up to speed. I got lucky, as he had an aptitude for it. Having worked as independent developer, I enjoyed the opportunity to work on projects with another developer. He eventually replaced me when decided to move on from Anthony's.",
+            "In addition to my development work, I also had the chance to perform a lot of other duties while at Anthony's. Working in such a small team supporting the corporate office and almost 20 restaurants, I also functioned as technical support, de-facto systems administrator when needed, I even helped set up a few new restaurants running cables and setting up hardware."
+        ]
+    },    
+    {
+        "title": "Channel Ready, Inc",
+        "body": [
+            "While Anthony's was a stable, full-time position, I was employed as a contrator. After nearly 10 years there I was wanting to get out of contracting. One of my partners from Digital Odyssey connected me to Channel Ready. I started working there in October of 2011 and have been there since. A small boutique web-design and multi-media firm, they were looking to modernize there custom-written client web site management system. I worked directly with the owners to re-design a system from the ground-up [(read more here)](/channel-ready) to allow their varied clients to manage their own web sites. Sort of like WordPress, but with highly customized front-ends. It was fulfilling to see the project from conception through to implementation.",
+            "Unfortunately, in May of 2023 they made the decision to begin winding down the business. I'm grateful to have worked with them for such a long time, and for the experience I've gained along the way."
+        ]
+    }
+]

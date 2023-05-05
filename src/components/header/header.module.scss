@@ -1,0 +1,21 @@
+@import "../../styles/globals";
+
+.container {
+    padding: 1rem 0;
+}
+
+.masthead {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    border-bottom: solid 1px rgba($blue, .2);
+    font-family: 'Playfair Display', serif;
+}
+
+.siteLinks {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 1rem;
+}

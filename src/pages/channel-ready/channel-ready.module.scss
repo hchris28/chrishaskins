@@ -1,0 +1,43 @@
+@import "../../styles/globals";
+
+.moduleList {
+    dd {
+        margin: 0 0 1rem 0;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .moduleName {
+        font-weight: 700; 
+    }
+
+    .moduleSummary {
+        font-size: .875rem;
+        display: flex;
+        align-items: center;
+        padding-bottom: .75rem;
+        margin-bottom: .75rem;
+        border-bottom: solid 1px rgba($blue, .1)
+    }
+
+    .moduleDescription {
+        font-size: .875rem;
+        font-style: italic;
+    }
+}
+
+.moduleVisibilityToggle {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0 0 0 auto;
+    cursor: pointer;
+
+    svg {
+        height: 1.5rem;
+        fill: $blue;
+        display: block;
+    }
+}

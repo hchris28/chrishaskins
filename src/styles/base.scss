@@ -1,0 +1,103 @@
+@import "_globals.scss";
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: $text-color-default;
+    line-height: 1.5;
+    margin: 4rem;
+    background-image: linear-gradient(0deg,
+            hsl(270deg 100% 7%) 0%,
+            hsl(238deg 45% 13%) 6%,
+            hsl(224deg 49% 16%) 11%,
+            hsl(216deg 51% 20%) 17%,
+            hsl(210deg 51% 23%) 22%,
+            hsl(205deg 49% 26%) 28%,
+            hsl(202deg 46% 30%) 33%,
+            hsl(198deg 41% 33%) 39%,
+            hsl(195deg 36% 38%) 44%,
+            hsl(191deg 31% 42%) 50%,
+            hsl(188deg 26% 46%) 56%,
+            hsl(183deg 22% 51%) 61%,
+            hsl(177deg 23% 57%) 67%,
+            hsl(170deg 25% 63%) 72%,
+            hsl(162deg 27% 69%) 78%,
+            hsl(153deg 30% 76%) 83%,
+            hsl(141deg 36% 83%) 89%,
+            hsl(124deg 47% 89%) 94%,
+            hsl(104deg 100% 95%) 100%);
+    background-attachment: fixed;
+}
+
+a {
+    background-image: linear-gradient(to right,
+            $blue,
+            $blue 50%,
+            #000 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    // padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+a:before {
+    content: '';
+    background: $blue;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    background-position: 0;
+}
+
+a:hover::before {
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    max-width: 65ch;
+    line-height: 1.7;
+}
+
+ul,
+ol {
+    padding: 0 0 0 1.25rem;
+}
+
+button {
+    font-family: inherit;
+}
+
+hr {
+    border: none;
+    border-bottom: solid 1px $blue;
+}
