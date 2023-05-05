@@ -1,6 +1,6 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
-import { Meta } from "../../components/meta"
+import { Meta } from "../components/meta"
 
 const IndexPage = (props: PageProps): JSX.Element => {
     return (
