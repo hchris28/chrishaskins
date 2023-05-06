@@ -15,17 +15,17 @@ const IndexPage = (props: PageProps): JSX.Element => {
             <div className={styles.pageLinks}>
                 <div>
                     <LinkCard to="/about-me" title="About Me">
-                        Find about more about my career path and skill set.
+                        <p>Find about more about my career path and skill set.</p>
                     </LinkCard>
                 </div>
                 <div>
                     <LinkCard to="/work-history" title="Work History">
-                        Learn about my recent work history and projects I've worked on.
+                        <p>Learn about my recent work history and projects I've worked on.</p>
                     </LinkCard>
                 </div>
                 <div>
                     <LinkCard to="/personal-pursuits" title="Personal Pursuits">
-                        Side projects, volunteer work outside my professional capacity.
+                        <p>Side projects, volunteer work outside my professional capacity.</p>
                     </LinkCard>
                 </div>
             </div>

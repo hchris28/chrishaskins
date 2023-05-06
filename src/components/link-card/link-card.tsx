@@ -13,9 +13,7 @@ const LinkCard = ({ to, title, children }: LinkCardProps): JSX.Element => {
     return (
         <Link to={to} className={styles.container}>
             <p className={styles.title}>{title}</p>
-            <div className={styles.text}>
-                {children}
-            </div>
+            {children}
         </Link>
     )
 }
