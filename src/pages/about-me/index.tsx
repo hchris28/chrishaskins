@@ -19,7 +19,7 @@ const AboutMe = (props: PageProps): JSX.Element => {
                         Over the course of my career, I consider myself fortunate to have consistently held positions that have
                         given me autonomy in making design decisions and implementing solutions. This comes with the territory of
                         being an independent developer. This isn't to say that I have been working in a vacuum, of course I have
-                        been help accountable for my work, and I think my track record for copmleting mission critical applications
+                        been help accountable for my work, and I think my track record for completing mission critical applications
                         speaks for itself.
                     </p>
                     <h2>How I got here</h2>
