@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "gatsby"
 import NavLink from "./nav-link";
 import PdfIcon from "../icons/pdf";
 import resumePdf from "../../downloads/chris-haskins-resume.pdf";
@@ -23,7 +24,6 @@ const navLinkIsActive = (currentPath: string, navLinkData: NavLinkData): boolean
 const Header = ({ siteTitle, path }: HeaderProps): JSX.Element => {
 
     const navLinks: Array<NavLinkData> = [
-        { to: "/", label: "Home" },
         { to: "/about-me", label: "About Me" },
         { to: "/work-history", label: "Work History", groupWith: ["/channel-ready", "/anthonys"] },
         { to: "/personal-pursuits", label: "Personal Pursuits" },
@@ -32,7 +32,9 @@ const Header = ({ siteTitle, path }: HeaderProps): JSX.Element => {
     return (
         <header className={styles.container}>
             <div className={styles.masthead}>
-                <p className={styles.siteTitle}>{siteTitle}</p>
+                <p className={styles.siteTitle}>
+                    <Link to="/">{siteTitle}</Link>
+                </p>
                 <div className={styles.contact}>
                     <p><a href="mailto:chris@xeelee.org">chris@xeelee.org</a></p>
                     <p><a href="tel:206-552-4256">206-552-4256</a></p>
