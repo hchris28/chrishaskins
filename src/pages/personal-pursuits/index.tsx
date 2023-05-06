@@ -42,15 +42,18 @@ const PeronsalPursuits = (props: PageProps): JSX.Element => {
             </p>
             <h2>Burns &amp; McDonnell Prototype</h2>
             <p>
-                I was approached to build a proof of concept for a materials management project for Burns & McDonnell. 
-                [Coming Soon...] 
+                I was approached to build a proof of concept for a materials management project for a large construction company 
+                building out solar farms. Inventory data captured in the field using handheld devices was imported into a database.
+                This data was then made available via a web portal for tracking and analysis. I used a MySql database to store the 
+                data which was imported via a php script monitoring an upload folder for files. I build a REST API in PHP which 
+                powered a front-end created with React.
             </p>
+            <p>Screenshots and links coming soon!</p>
             <h2>Wedgwood Community Council</h2>
             <p>
                 I have volunteered with my neighborhood community council since 2016. In my capacity as board member I have served 
                 as council treasurer for my entire term. I have also helped to organize several community events, including managing
-                a community picnic. 
-                [Coming Soon...]
+                a community picnic.
             </p>
         </main>
     )
