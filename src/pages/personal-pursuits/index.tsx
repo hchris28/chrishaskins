@@ -8,7 +8,7 @@ const PeronsalPursuits = (props: PageProps): JSX.Element => {
     return (
         <main>
             <h1>
-                Peronsal Pursuits
+                Personal Pursuits
             </h1>
             <p>
                 In my professional work I have spent most of my time working with the .NET platform, C#, and 
