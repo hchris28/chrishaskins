@@ -1,11 +1,14 @@
-
 .mainContainer {
     background: rgba(255, 255, 255, .9);
-    padding: 2rem 8rem;
+    padding: 1rem 3rem;
     border-radius: .5rem;
     margin: 0 auto;
     max-width: 1400px;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    @media (min-width: 1200px) {
+        padding: 2rem 8rem;
+    }
 }

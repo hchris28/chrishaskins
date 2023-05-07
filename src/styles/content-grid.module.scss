@@ -1,6 +1,27 @@
 
 .container {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 6rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    @media (min-width: 1200px) {
+        grid-template-columns: 1.5fr 1fr;
+        gap: 6rem;
+
+        > :nth-child(2) {
+            order: unset;
+        }
+    }
+}
+
+.reverseRowsWhenStacked {
+    > :nth-child(2) {
+        order: -1;
+    }
+
+    @media (min-width: 1200px) {
+        > :nth-child(2) {
+            order: unset;
+        }
+    }
 }

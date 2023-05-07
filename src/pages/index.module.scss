@@ -13,6 +13,10 @@
 
 .pageLinks {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 5%;
+
+    @media (min-width: 925px) {
+        grid-template-columns: 1fr 1fr 1fr
+    }
 }

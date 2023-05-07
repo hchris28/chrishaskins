@@ -11,11 +11,9 @@ import * as contentGridStyles from "../../styles/content-grid.module.scss"
 const WorkHistory = (props: PageProps): JSX.Element => {
     return (
         <main>
+            <h1>Work History</h1>
             <div className={contentGridStyles.container}>
                 <div>
-                    <h1>
-                        Work History
-                    </h1>
                     <p>
                         I have had the good fortune to have spent the last 20 years of my career at 2 great companies. For most of
                         that time, I have had the role of an independent developer working directly with application owners and users
@@ -25,7 +23,7 @@ const WorkHistory = (props: PageProps): JSX.Element => {
                     </p>
                     <p>
                         You can learn more about my role at each of these companies using the links on this page. To get a broader
-                        perspective on my career path and learn what I was doing prior to joining Anthony's, please check out 
+                        perspective on my career path and learn what I was doing prior to joining Anthony's, please check out
                         the <Link to="/about-me">About Me</Link> page.
                     </p>
                 </div>

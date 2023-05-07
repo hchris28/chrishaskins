@@ -1,5 +1,7 @@
 @import "../../styles/globals";
 
+$showMenu: 1025px;
+
 .container {
     display: flex;
     flex-direction: column;
@@ -22,22 +24,57 @@
 .contact {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    flex-wrap: wrap;
 
     p {
-        margin: 0;
+        margin: 0 1rem;
+        white-space: nowrap;
+    }
+}
+
+.hamburgerContainer {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: $showMenu) {
+        display: none;
     }
 }
 
 .siteLinks {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
-    margin-top: 1rem;
+    gap: 1rem;
+    // max-width: max-content;
+    // margin: 0 auto;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
+    background-color: #fff;
+
+    &:before,
+    &:after {
+        content: ' ';
+        height: 1rem;
+    }
 
     a {
-        padding: 5px 0;
+        padding: .5rem 1rem;
+    }
+
+    @media (min-width: $showMenu) {
+        flex-direction: row;
+        gap: 3rem;
+        border: unset;
+        margin-top: 1rem;
+        border-radius: unset;
+        box-shadow: unset;
+        background-color: unset;
+
+        a {
+            padding: 5px 0;
+        }
     }
 }
 

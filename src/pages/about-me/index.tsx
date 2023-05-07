@@ -2,19 +2,16 @@ import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
 import { Meta } from "../../components/meta"
 import Markdown from 'markdown-to-jsx';
-
 import jobPathData from "./job-path.json"
-
+import classNames from "classnames"
 import * as contentGridStyles from "../../styles/content-grid.module.scss"
 
 const AboutMe = (props: PageProps): JSX.Element => {
     return (
         <main>
-            <div className={contentGridStyles.container}>
+            <h1>About Me</h1>
+            <div className={classNames(contentGridStyles.container, contentGridStyles.reverseRowsWhenStacked)}>
                 <div>
-                    <h1>
-                        About Me
-                    </h1>
                     <p>
                         Over the course of my career, I consider myself fortunate to have consistently held positions that have
                         given me autonomy in making design decisions and implementing solutions. This comes with the territory of

@@ -7,9 +7,7 @@ import { Meta } from "../../components/meta"
 const PeronsalPursuits = (props: PageProps): JSX.Element => {
     return (
         <main>
-            <h1>
-                Personal Pursuits
-            </h1>
+            <h1>Personal Pursuits</h1>
             <p>
                 In my professional work I have spent most of my time working with the .NET platform, C#, and 
                 SQL Server. However in my spare time I have gravitated towards different platforms. I have completed
