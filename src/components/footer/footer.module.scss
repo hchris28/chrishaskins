@@ -3,7 +3,12 @@
 .container {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    flex-wrap: wrap;
     border-top: solid 1px rgba($blue, .2);
     margin-top: 3rem;
+
+    p {
+        margin: 0 1rem;
+        white-space: nowrap;
+    }
 }
