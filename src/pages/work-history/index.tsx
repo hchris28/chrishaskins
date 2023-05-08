@@ -11,7 +11,7 @@ import * as contentGridStyles from "../../styles/content-grid.module.scss"
 const WorkHistory = (props: PageProps): JSX.Element => {
     return (
         <main>
-            <h1>Work History</h1>
+            <h1>Recent Work</h1>
             <div className={contentGridStyles.container}>
                 <div>
                     <p>

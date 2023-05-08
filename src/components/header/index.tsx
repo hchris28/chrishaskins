@@ -48,7 +48,7 @@ const Header = ({ siteTitle, path }: HeaderProps): JSX.Element => {
 
     const navLinks: Array<NavLinkData> = [
         { to: "/about-me", label: "About Me" },
-        { to: "/work-history", label: "Work History", groupWith: ["/channel-ready", "/anthonys"] },
+        { to: "/work-history", label: "Recent Work", groupWith: ["/channel-ready", "/anthonys"] },
         { to: "/personal-pursuits", label: "Personal Pursuits" },
     ]
 

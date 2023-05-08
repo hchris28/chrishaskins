@@ -9,7 +9,7 @@ const IndexPage = (props: PageProps): JSX.Element => {
     return (
         <main className={styles.container}>
             <p className={styles.intro}>
-                25 years of development experience with a focus on web technology and data architecture, proficient
+                Practcal yet creative developer with 25 years of experience focusing on web technology and data architecture, proficient
                 in both front-end and back-end technologies.
             </p>
             <div className={styles.pageLinks}>

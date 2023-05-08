@@ -14,12 +14,19 @@ const AboutMe = (props: PageProps): JSX.Element => {
                 <div>
                     <p>
                         Over the course of my career, I consider myself fortunate to have consistently held positions that have
-                        given me autonomy in making design decisions and implementing solutions. This comes with the territory of
-                        being an independent developer. This isn't to say that I have been working in a vacuum, of course I have
-                        been help accountable for my work, and I think my track record for completing mission critical applications
-                        speaks for itself.
+                        given me freedom to make design decisions and implement solutions. I started identifying problems and
+                        crafting software solutions starting at my very first job, even though it wasn't what I was hired to do.
+                        I've worked directly with non-technical users and more technically inclinded product owners, collaborating 
+                        on new features and working on bug fixes. I've had the opportunity to work at all levels of the application 
+                        stack, and on a variety of applications.
                     </p>
-                    <h2>How I got here</h2>
+                    <p>
+                        The experience I've gained as a result of my particular job history has helped me to become a practical yet 
+                        creative developer, with a strong sense of personal accountability. I've been allowed to operate with a 
+                        level of autonomy that has fostered self reliance and self motivation. Read on to learn a little bit more
+                        about how I got where I am today. 
+                    </p>
+                    <h2>Work Experience</h2>
                     {jobPathData.map(job => {
                         return (
                             <React.Fragment key={job.title}>
@@ -37,6 +44,12 @@ const AboutMe = (props: PageProps): JSX.Element => {
                             </React.Fragment>
                         )
                     })}
+                    <br /><hr /><br />
+                    <p>
+                        I'm grateful to have found myself in stable positions that provide enough variety and challenges to
+                        keep things interesting and to allow me to learn new skills. I'm looking forward to whatever may
+                        come next. Thanks for reading!
+                    </p>
                 </div>
                 <div>
                     <h2>Technical Skills & Proficiencies</h2>
