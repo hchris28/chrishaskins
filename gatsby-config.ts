@@ -1,6 +1,9 @@
 import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
+    // flags: {
+    //     DEV_SSR: true
+    // },
     trailingSlash: "never",
     siteMetadata: {
         title: `Chris Haskins`,
@@ -14,10 +17,10 @@ const config: GatsbyConfig = {
     // Learn more at: https://gatsby.dev/graphql-typegen
     graphqlTypegen: true,
     plugins: [
-        "gatsby-plugin-sass", 
-        "gatsby-plugin-image", 
-        "gatsby-plugin-sharp", 
-        "gatsby-transformer-sharp", 
+        "gatsby-plugin-sass",
+        "gatsby-plugin-image",
+        "gatsby-plugin-sharp",
+        "gatsby-transformer-sharp",
         {
             resolve: 'gatsby-source-filesystem',
             options: {
@@ -25,7 +28,13 @@ const config: GatsbyConfig = {
                 "path": "./src/images/"
             },
             __key: "images"
-        }
+        },
+        {
+            resolve: 'gatsby-plugin-manifest',
+            options: {
+                icon: 'src/images/icon.png',
+            },
+        },
     ]
 };
 

@@ -28,19 +28,20 @@ const Header = ({ siteTitle, path }: HeaderProps): JSX.Element => {
 
     const [isOpen, setOpen] = useState(false);
 
-    const setOpenBasedOnWindowSize = () => {
-        if (window.innerWidth >= 1025) {
-            setOpen(true);
-        } else {
-            setOpen(false);
-        }
-    }
-
-    const debouncedHandleResize = debounce(setOpenBasedOnWindowSize, 150);
-
     useEffect(() => {
+
+        const setOpenBasedOnWindowSize = () => {
+            if (window.innerWidth >= 1025) {
+                setOpen(true);
+            } else {
+                setOpen(false);
+            }
+        }
+        const debouncedHandleResize = debounce(setOpenBasedOnWindowSize, 150);
+        
         setOpenBasedOnWindowSize();
         window.addEventListener('resize', debouncedHandleResize);
+
         return () => {
             window.removeEventListener('resize', debouncedHandleResize);
         };
