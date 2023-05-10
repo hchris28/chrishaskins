@@ -5,6 +5,7 @@ import Markdown from 'markdown-to-jsx';
 import jobPathData from "./job-path.json"
 import classNames from "classnames"
 import * as contentGridStyles from "../../styles/content-grid.module.scss"
+import * as styles from "./about-me.module.scss"
 
 const AboutMe = (props: PageProps): JSX.Element => {
     return (
@@ -13,8 +14,8 @@ const AboutMe = (props: PageProps): JSX.Element => {
             <div className={classNames(contentGridStyles.container, contentGridStyles.reverseRowsWhenStacked)}>
                 <div>
                     <p>
-                        Over the course of my career, I consider myself fortunate to have consistently held positions that have
-                        given me freedom to make design decisions and implement solutions. I started identifying problems and
+                        I consider myself fortunate to have consistently held positions that have given me the freedom to make 
+                        design decisions and implement solutions over the course of my career. I started identifying problems and
                         crafting software solutions starting at my very first job, even though it wasn't what I was hired to do.
                         I've worked directly with non-technical users and more technically inclinded product owners, collaborating 
                         on new features and working on bug fixes. I've had the opportunity to work at all levels of the application 
@@ -53,7 +54,7 @@ const AboutMe = (props: PageProps): JSX.Element => {
                 </div>
                 <div>
                     <h2>Technical Skills & Proficiencies</h2>
-                    <ul>
+                    <ul className={styles.skillsList}>
                         <li><b>Languages</b> C#, PHP, Javascript, HTML/CSS, SQL</li>
                         <li><b>Frameworks</b> .NET, MVC, Entity Framework, Autofac (IoC), React</li>
                         <li><b>Skills/IDE</b> Visual Studio/VSCode, Subversion/TortoiseSVN, GitHub, MSSQL, MySQL, Firebase/Firestore</li>

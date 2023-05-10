@@ -11,10 +11,12 @@ interface LinkCardProps {
 
 const LinkCard = ({ to, title, children }: LinkCardProps): JSX.Element => {
     return (
-        <Link to={to} className={styles.container}>
-            <p className={styles.title}>{title}</p>
-            {children}
-        </Link>
+        <div className={styles.container}>
+            <Link to={to}>
+                <p className={styles.title}>{title}</p>
+                {children}
+            </Link>
+        </div>
     )
 }
 
