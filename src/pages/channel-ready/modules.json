@@ -32,7 +32,7 @@
     {
         "name": "Member Module",
         "summary": "Add member portal funcionality to a client's web site.",
-        "description": "Manage members of a client's web site. Members could be assigned to roles. Access to content and resources could be granted opr revoked based on roles."
+        "description": "Manage members of a client's web site. Members could be assigned to roles. Access to content and resources could be granted or revoked based on roles."
     },
     {
         "name": "Property Management Module",
