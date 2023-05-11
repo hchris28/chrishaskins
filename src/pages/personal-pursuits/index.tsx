@@ -38,7 +38,7 @@ const PeronsalPursuits = (props: PageProps): JSX.Element => {
             <p>
                 <a href="https://shop.wedgwoodcc.org/" target="_blank">https://shop.wedgwoodcc.org/</a>
             </p>
-            <h2>Burns &amp; McDonnell Prototype</h2>
+            <h2>Materials Management Prototype</h2>
             <p>
                 I was approached to build a proof of concept for a materials management project for a large construction company 
                 building out solar farms. Inventory data captured in the field using handheld devices was imported into a database.
