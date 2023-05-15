@@ -37,7 +37,7 @@ const WorkHistory = (props: PageProps): JSX.Element => {
                                 className={styles.channelReadyLogo}
                             />
                             <p className={styles.pageLinkText}>
-                                <span className={styles.jobTitle}>Web Application Developer</span><br />
+                                <span className={styles.jobTitle}>Senior Developer & Lead Architect</span><br />
                                 <span className={styles.company}>Channel Ready, Inc.</span><br />
                                 <span className={styles.datesWorked}>Oct 2011 - Present</span>
                             </p>

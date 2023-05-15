@@ -26,7 +26,7 @@ const ChannelReady = (props: PageProps): JSX.Element => {
 
     return (
         <main>
-            <JobHeader company="Channel Ready, Inc." title="Web Application Developer" dates="Oct 2011 - Present" />
+            <JobHeader company="Channel Ready, Inc." title="Senior Developer & Lead Architect" dates="Oct 2011 - Present" />
             <div className={classNames(contentGridStyles.container, contentGridStyles.reverseRowsWhenStacked)}>
                 <div>
                     <p>
