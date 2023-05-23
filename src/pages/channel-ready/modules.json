@@ -2,47 +2,47 @@
     {
         "name": "Content Management Module",
         "summary": "Allow clients to edit their own content.",
-        "description": "We used CKEditor for content editing, adding some custom plug-ins for data-driven widgets. This module also enables users to re-arrange pages and group them together into sections."
+        "description": "I integrated a 3rd party HTML editor (CKEditor) into our CMS for rich-content editing, enhancing it with custom plug-ins for data-driven widgets and templates for clients encouraging consistent layouts. Clients could also manage their own navigation menus, adding and removing pages, and ordering and grouping pages into sections. Clients could also add SEO and other meta information on a per-page basis."
     },
     {
         "name": "Media Module",
         "summary": "Allow clients to manage images, videos, and documents.",
-        "description": "An all-purpose media management system for uploading and managing images, videos, audio files, and documents. Allowed for searching, tagging, updating, adding descriptions to resources. Included integration with Vimeo for videos so videos uploaded to our system were stored on Vimeo."
+        "description": "An all-purpose media management system for uploading and managing images, videos, audio files, and documents. Allowed for searching, tagging, updating, adding descriptions to resources. Included integration with Vimeo, via their API, so that videos uploaded to our system were stored on Vimeo's servers. This allowed us to offload the storage and bandwidth costs of video hosting, while still allowing clients to manage their videos from within our CMS. This module integrated with other modules that needed to use media resources, such as the content management module, the catalog module, and the events module. I also created a media widget that could be used to display media resources on the front end of a site, including an option for media collections which would be rendered as a photo or video gallery."
     },
     {
         "name": "News Module",
         "summary": "Manage timely news items, similar to micro-blogs.",
-        "description": "Intended to be used for news rolls on clients web sites. News articles could contain any HTML content."
+        "description": "Intended to be used for news rolls on clients web sites. News articles were a little like pages in that they could contain any HTML content and could be accessed independently by url."
     },
     {
         "name": "Ad Module",
         "summary": "Allow clients to place and track advertising on their web sites.",
-        "description": "Create ads and place them in content via widgets, easily enable or disable them. Similar to news, ads could contain any HTML content. Ads could be tracked and clicks / views could be reported on."
+        "description": "Clients could create ads and place them in content via widgets. They could be placed anywhere a user was creating content via our customiszed content editor. Similar to news, ads could contain any HTML content, but again the main difference is in the intent of use. Ads could easily enabled or disabled, and could be tracked; both clicks and views could be reported on."
     },
     {
         "name": "Catalog Module",
         "summary": "Product management for online catalogs and e-commerce sites.",
-        "description": "Create and manage products and product categories. I created an extensible product attribute system, allowing for clients with varying product types to use the same module without code or database modifications. Multiple SKU's per product allowed for variations within a product. A flexible product heirachy allowed users to organize their catalog as needed and re-organize at will."
+        "description": "Create and manage products and product categories. I created an extensible product attribute system, allowing for clients with varying product types to use the same module without code or database modifications. Multiple SKU's per product allowed for variations within a product. A flexible product heirarchy allowed users to organize their catalog as needed and re-organize at will. Product pages were generated automatically as new products were added and clients had the ability to customize the layout of these pages. Products could be associated with media resources, allowing for product images and videos. Products could also be associated with documents, allowing for product manuals and other documentation to be made available for download. Products could be associated with other products, allowing for cross-selling."
     },
     {
         "name": "Messaging Module",
         "summary": "Enable messaging between users of a client's web site.",
-        "description": "A module letting users (or admins) send messages to other users, or groups of users, through the client's web site. Messages allowed for HTML content as well as attachments."
+        "description": "A module letting users (or administrators) send messages to other users, or groups of users, through the client's web site. Messages allowed for HTML content as well as attachments. In addition to standard user-to-user messages, administrators could also send broadcast messages to all users of the website or specific groups of users."
     },
     {
         "name": "Member Module",
-        "summary": "Add member portal funcionality to a client's web site.",
-        "description": "Manage members of a client's web site. Members could be assigned to roles. Access to content and resources could be granted or revoked based on roles."
+        "summary": "Add member portal functionality to a client's web site.",
+        "description": "Manage members of a client's web site. Members could be assigned to roles. Access to content and resources could be granted or revoked based on roles. This module was biuld around the .NET membership provider model, so it was easy to integrate with other systems that used the same model. I created a custom membership provider that allowed for the use of email addresses as usernames as well as custom password requirements, which was not supported by the default provider. I also created a custom profile provider that allowed for the use of custom profile properties defined in the CMS, rather than in the web.config file. This allowed for more flexibility in defining profile properties."
     },
     {
         "name": "Property Management Module",
         "summary": "Manage properties for sale or lease.",
-        "description": "This was a very specialized module created in reposnse to a client's needs. This client was a commercial real estate developer and listed all their available properties. Property data included HTML content as well as specific availabilities, associated media resources, and GIS data used for mapping on the client's web site."
+        "description": "This was a very specialized module created in response to a client's needs. The client was a commercial real estate developer and wanted to list all their available properties on their web site in a searchable format. Property data included HTML content as well as specific availabilities, associated media resources, and GIS data used for mapping on the client's web site. Media resources could be associated with properties allowing for property images, slideshows, videos, and documents such as floor or site plans and flyers."
     },
     {
         "name": "Client Data Module",
         "summary": "Adds custom data management to a project without the need for database changes.",
-        "description": "Clients often had some set of data that was unique to them, that was used to drive content widgets. Rather than add database tables and the necessary ORM code for each custom data set, I created an extensible system for defining the shape of client data in project configuration. The client data module could then use this configuration to allow for administration of this data, and for parsing the data on the front end, greatly reducing the need for a ton of custom code."
+        "description": "Clients often had some set of data that was unique to them, that was used to drive content widgets or other content on their front-end web site. Rather than add new database tables and the necessary ORM code for each custom data set, I created an extensible system for defining the shape of client data in project configuration. The client data module would read this configuration and allow for administration of this data in the CMS, and for parsing the data on the front end, greatly reducing the need for a ton of custom code. Custom data could participate in the publication workflow, allowing clients to preview changes before they went live. Custom data could also be associated with media resources, allowing for images, videos, and documents to be associated with custom data items."
     },
     {
         "name": "Publication Module",
@@ -52,11 +52,16 @@
     {
         "name": "Events Module",
         "summary": "Create and manage an event calender, including event registration.",
-        "description": "Create and manage events. Events could be categorized. Event descriptions could contain HTML content. Multiple sessions per event were allowed. I included a registration system in this module, so users could define different pricing levels if needed, as well as create custom data collection forms for each regsistrant. If using the member module, events could be restricted to particular roles. Resgistrants could be viewed and managed from within the content management system."
+        "description": "Create and manage events. Events could be categorized. Event descriptions could contain HTML content. Multiple sessions per event were allowed. I included a registration system in this module, so users could define different pricing levels if needed, as well as create custom data collection forms for each regsistrant. If using the member module, events could be restricted to particular roles. Resgistrants could be viewed and managed from within the content management system. Event registration was integrated with payment providers, allowing for online payment of registration fees. I also created a custom event calendar widget that could be used to display events on the front-end web site. The widget was highly configurable, allowing for different views of the calendar, and different ways of displaying events."
     },
     {
         "name": "Course Development Module",
         "summary": "Design curriculum for online training.",
         "description": "A few of our clients did internal training for employees. This module allowed course administrators to create content in different curricula, which could be associated with user roles, and broken out into courses and modules. Modules were broken out into sections, each allowing for rich HTML content and media resources. Custom quizzes could be created for for modules and courses. We also included the concept of activities, which were intended to be real-life tasks required to complete a module. Progress through a course could be controlled by requiring completion of a quiz or activity before a user could move on."
+    },
+    {
+        "name": "Report Module",
+        "summary": "Add reporting insfrastructure to a project.",
+        "description": "Most if not all clients used some kind of reports. I created a reporting infrastructure that allowed for the creation of reports in the CMS. Reports were defined in classes inheriting from a base report class. The primary jobs of report classes were to define parameters and generate XML output. This XML output could then be transformed into HTML, PDF, Excel, or downloaded as raw XML. Support for charts was included. Reports could be viewed on the front-end web site or from within the CMS, or could be scheduled to run at a particular time and emailed to a list of recipients. Access to reports could be restricted by user role."
     }
 ]

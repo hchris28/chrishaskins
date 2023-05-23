@@ -41,18 +41,18 @@ const Anthonys = (props: PageProps): JSX.Element => {
                     </p>
                     <p>
                         There was a need to share documents across the organization, and the likes of Dropbox and Google Drive were yet
-                        to be made avilable. I wrote a document sharing application that would let users upload documents and share them
+                        to be made available. I wrote a document sharing application that would let users upload documents and share them
                         with other users, and limit access by role. Multiple document formats were allowed and the document contents were
                         fully indexed and searchable.
                     </p>
                     <p>
                         The applications mentioned so far have all been ASP.NET web applications. The one outlier was a recipe archive / costing
                         application which was a Windows Desktop application. This application would import purchase orders from vendors, tracking
-                        unit costs for ingredients. Once recipes were entered into the application, we could more accuraetly track the costs
+                        unit costs for ingredients. Once recipes were entered into the application, we could more accurately track the costs
                         associated with each recipe.
                     </p>
                     <p>
-                        There were many other smaller applications and various projects during my time here. There was a menu designer that enabled
+                        There were many other smaller applications and various projects during my time at Anthony's. There was a menu designer that enabled
                         store managers to quickly change and print daily menus. Point-of-sale integrations for gift card and loyalty card
                         processing, as well as extensions for credit card processing. This position was full of variety and plenty of challenges.
                     </p>

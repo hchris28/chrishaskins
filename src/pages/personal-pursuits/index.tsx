@@ -18,7 +18,7 @@ const PeronsalPursuits = (props: PageProps): JSX.Element => {
                 I have been volunteering with Gently Hugged for over 10 years. I created the first version of their web site 
                 using PHP. Over the years I have helped to maintain it, doing small content updates and minor improvements. I am
                 currently working on version 2 of the web site using Gatsby + Netlify. I have incorporated Decap CMS to enable
-                them to make content changes more easily without having to go through me.
+                the client to easily make content changes without having to go through a developer.
             </p>
             <p>
                 Version 1: 
