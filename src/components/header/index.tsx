@@ -38,7 +38,7 @@ const Header = ({ siteTitle, path }: HeaderProps): JSX.Element => {
             }
         }
         const debouncedHandleResize = debounce(setOpenBasedOnWindowSize, 150);
-        
+
         setOpenBasedOnWindowSize();
         window.addEventListener('resize', debouncedHandleResize);
 

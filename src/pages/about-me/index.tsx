@@ -1,5 +1,6 @@
 import * as React from "react"
 import type { HeadFC, PageProps } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 import { Meta } from "../../components/meta"
 import Markdown from 'markdown-to-jsx';
 import jobPathData from "./job-path.json"
@@ -10,11 +11,19 @@ import * as styles from "./about-me.module.scss"
 const AboutMe = (props: PageProps): JSX.Element => {
     return (
         <main>
-            <h1>About Me</h1>
+            <h1>
+                <StaticImage
+                    objectFit="contain"
+                    src="../../images/dork.png"
+                    alt="Headshot"
+                    className={styles.headshot}
+                />
+                <span>About Me</span>
+            </h1>
             <div className={classNames(contentGridStyles.container, contentGridStyles.reverseRowsWhenStacked)}>
                 <div>
                     <p>
-                        I consider myself fortunate to have consistently held positions that have given me the freedom to make design decisions and implement solutions over the course of my career. I started identifying problems and crafting software solutions starting at my very first job, even when it wasn't what I was hired to do. 
+                        I consider myself fortunate to have consistently held positions that have given me the freedom to make design decisions and implement solutions over the course of my career. I started identifying problems and crafting software solutions starting at my very first job, even when it wasn't what I was hired to do.
                     </p>
 
                     <p>In my capacity as a web developer, I've had the opportunity to:</p>
@@ -28,7 +37,7 @@ const AboutMe = (props: PageProps): JSX.Element => {
                     </ul>
 
                     <p>
-                        The experience I've gained as a result of my particular job history has helped me to become a practical yet creative developer, with a strong sense of personal accountability. I've been allowed to operate with a level of autonomy that has fostered self reliance and self motivation. Read on to learn a little bit more about how I got where I am today. 
+                        The experience I've gained as a result of my particular job history has helped me to become a practical yet creative developer, with a strong sense of personal accountability. I've been allowed to operate with a level of autonomy that has fostered self reliance and self motivation. Read on to learn a little bit more about how I got where I am today.
                     </p>
                     <h2>Work Experience</h2>
                     {jobPathData.map(job => {
