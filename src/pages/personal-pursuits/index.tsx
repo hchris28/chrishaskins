@@ -78,6 +78,7 @@ const PeronsalPursuits = (props: PageProps): JSX.Element => {
                             objectFit="contain"
                             src="../../images/github-mark.svg"
                             alt="Channel Ready Logo"
+                            style={{ width: "2rem" }}
                         />
                         <span>View this site on GitHub</span>
                     </a>
