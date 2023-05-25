@@ -21,11 +21,11 @@ const PeronsalPursuits = (props: PageProps): JSX.Element => {
                 the client to easily make content changes without having to go through a developer.
             </p>
             <p>
-                Version 1: 
+                <strong>Version 1</strong>
                 <br />
                 <a href="http://gentlyhugged.org" target="_blank">http://gentlyhugged.org</a>
                 <br /><br />
-                Version 2: 
+                <strong>Version 2</strong>
                 <br/>
                 <a href="https://gently-hugged.netlify.app" target="_blank">https://gently-hugged.netlify.app</a>
             </p>
@@ -47,11 +47,12 @@ const PeronsalPursuits = (props: PageProps): JSX.Element => {
                 powered a front-end created with React.
             </p>
             <p>
-                Demo Application
+                <strong>Demo Application</strong>
                 <br />
                 <a href="http://bnm.xeelee.org" target="_blank">http://bnm.xeelee.org</a> (user: <strong>arthurdent</strong>, password: <strong>dontpanic</strong>)
                 <br /><br />
-                Source Code
+                <strong>Source Code</strong>
+                <br />
                 <a href="https://github.com/hchris28/bnm-ui.xeelee.org" target="_blank">Front-end on GitHub</a>
                 <br />
                 <a href="https://github.com/hchris28/bnm-api.xeelee.org" target="_blank">API on Github</a>
