@@ -8,7 +8,7 @@ import jobPathData from "./job-path.json"
 import classNames from "classnames"
 import * as contentGridStyles from "../../styles/content-grid.module.scss"
 import * as styles from "./about-me.module.scss"
-import recommendationPdf from "../../downloads/chirs-haskins-recommendation.pdf";
+import recommendationPdf from "../../downloads/chris-haskins-recommendation.pdf";
 
 const AboutMe = (props: PageProps): JSX.Element => {
     return (
