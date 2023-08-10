@@ -35,6 +35,7 @@ $showMenu: 1025px;
 .hamburgerContainer {
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
 
     @media (min-width: $showMenu) {
         display: none;

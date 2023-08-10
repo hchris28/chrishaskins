@@ -36,3 +36,12 @@
             hsl(104deg 100% 95%) 100%);
     background-attachment: fixed;
 }
+
+.recommendationLink {
+    display: flex;
+    gap: .5rem;
+
+    svg {
+        width: 3.5rem;
+    }
+}

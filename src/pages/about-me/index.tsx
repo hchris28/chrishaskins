@@ -3,10 +3,12 @@ import type { HeadFC, PageProps } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import { Meta } from "../../components/meta"
 import Markdown from 'markdown-to-jsx';
+import PdfIcon from "../../components/icons/pdf"
 import jobPathData from "./job-path.json"
 import classNames from "classnames"
 import * as contentGridStyles from "../../styles/content-grid.module.scss"
 import * as styles from "./about-me.module.scss"
+import recommendationPdf from "../../downloads/chirs-haskins-recommendation.pdf";
 
 const AboutMe = (props: PageProps): JSX.Element => {
     return (
@@ -85,9 +87,16 @@ const AboutMe = (props: PageProps): JSX.Element => {
                     <br />
                     <hr />
                     <br />
+                    <h2>References</h2>
                     <p>
-                        References and access to private GitHub repositories available on request.
+                        <a href={recommendationPdf} className={styles.recommendationLink} download>
+                            <PdfIcon /> Letter from Vicky Chenn, Technical Director, ChannelReady, Inc.
+                        </a>
                     </p>
+                    <p>Additional references available on request.</p>
+                    <br />
+                    <hr />
+                    <br />
                 </div>
             </div>
         </main>
