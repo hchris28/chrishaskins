@@ -19,18 +19,12 @@ const PeronsalPursuits = (props: PageProps): JSX.Element => {
                     <h2>Gently Hugged</h2>
                     <p>
                         I have been volunteering with Gently Hugged for over 10 years. I created the first version of their web site
-                        using PHP. Over the years I have helped to maintain it, doing small content updates and minor improvements. I am
-                        currently working on version 2 of the web site using Gatsby + Netlify. I have incorporated Decap CMS to enable
+                        using PHP. Over the years I have helped to maintain it, doing small content updates and minor improvements. I have
+                        recently released version 2 of the web site using Gatsby + Netlify. I have incorporated Decap CMS to enable
                         the client to easily make content changes without having to go through a developer.
                     </p>
                     <p>
-                        <strong>Version 1</strong>
-                        <br />
                         <a href="http://gentlyhugged.org" target="_blank">http://gentlyhugged.org</a>
-                        <br /><br />
-                        <strong>Version 2</strong>
-                        <br />
-                        <a href="https://gently-hugged.netlify.app" target="_blank">https://gently-hugged.netlify.app</a>
                     </p>
                     <h2>Shop Wedgwood</h2>
                     <p>
