@@ -69,7 +69,7 @@ const AboutMe = (props: PageProps): JSX.Element => {
                 <div>
                     <h2>Technical Skills & Proficiencies</h2>
                     <ul className={styles.skillsList}>
-                        <li><b>Languages</b> C#, PHP, Javascript, HTML/CSS, SQL, GraphQL</li>
+                        <li><b>Languages</b> C#, PHP, Javascript, TypeScript, HTML/CSS/SASS, SQL, GraphQL</li>
                         <li><b>Frameworks</b> .NET, MVC, Entity Framework, Autofac (IoC), React, Gatsby, MSTest</li>
                         <li><b>Software</b> Visual Studio/VSCode, Photoshop</li>
                         <li><b>Databases</b> MSSQL, MySQL, Firebase/Firestore</li>
@@ -93,7 +93,6 @@ const AboutMe = (props: PageProps): JSX.Element => {
                             <PdfIcon /> Letter from Vicky Chenn, Technical Director, ChannelReady, Inc.
                         </a>
                     </p>
-                    <p>Additional references available on request.</p>
                     <br />
                     <hr />
                     <br />
