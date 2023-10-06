@@ -33,7 +33,9 @@ const PeronsalPursuits = (props: PageProps): JSX.Element => {
                         integration and business search.
                     </p>
                     <p>
-                        <a href="https://shop.wedgwoodcc.org/" target="_blank">https://shop.wedgwoodcc.org/</a>
+                        <a href="https://shop.wedgwoodcc.org" target="_blank">https://shop.wedgwoodcc.org/</a>
+                        <br /><br />
+                        <a href="https://github.com/wedgwoodcc/shop-wedgwood" target="_blank">Front-end on GitHub</a>
                     </p>
                     <h2>Materials Management Prototype</h2>
                     <p>
